@@ -1,0 +1,19 @@
+1)  Lag Testklasse  , som arver 'BaseTest' -klassen  
+ MathSolver.Test  :  <myname>\ 'MyTestTest'.cs 
+
+2) Lag  Løsningsfil sim implementer Problmenet  (  MathSolver.Eulerproblemer  I Problem)
+   MathSolver.MySolution  ;  <myname>\ 'MySolution'.cs
+   
+-- kjør tester..
+
+3) Utvide Benchmark
+
+I MathSolver.Benchmark  :  BenchmakrTestProblemXX'.cs  legg til din løsning..
+
+-- kjør bnechmark 
+
+dotnet run -c Release  ProblemX
+
+
+
+
