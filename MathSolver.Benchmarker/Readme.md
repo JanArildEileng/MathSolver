@@ -1,1 +1,1 @@
-﻿dotnet run -c Release  ProblemA1
+﻿dotnet run -c Release  ProblemE003
