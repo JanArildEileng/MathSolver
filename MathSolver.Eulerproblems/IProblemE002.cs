@@ -8,8 +8,8 @@ namespace MathSolver.Eulerproblems
           What is  2+2   ? 
      */
 
-    public interface IProblemA1
+    public interface IProblemE002
     {
-        int Sum(int a, int b);
+        long SumEven(long below);
     }
 }
