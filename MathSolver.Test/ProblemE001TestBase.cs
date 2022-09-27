@@ -7,7 +7,6 @@ abstract public class ProblemE001TestBase
 
     //TODO
     // Lag Sub-klasse med  konstruktor som initierer 'sut' (med din egen implementasjon av IProblemE001)
-
     [Fact]
     [Trait("ProblemE001", "")]
     public void ExampleTest()
