@@ -6,7 +6,7 @@ namespace MathSolver.Benchmarker;
 [MemoryDiagnoser]
 [Orderer(SummaryOrderPolicy.FastestToSlowest)]
 [RankColumn()]
-public  class BenchmarkTestProblemA1
+public  class BenchmarkTestProblemE001
 {
 
     [Benchmark]
@@ -20,7 +20,7 @@ public  class BenchmarkTestProblemA1
     [Benchmark(Description ="jaei")]
     public int JaeiSolution()
     {
-      return  new ProblemA1().Sum(2,2);
+      return  new E001Multiplesof3and5().Sum(below: 1000); 
     }
 
 }

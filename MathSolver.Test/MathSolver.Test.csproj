@@ -27,8 +27,4 @@
     <ProjectReference Include="..\MathSolver.Mysolution\MathSolver.Mysolution.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Domain\" />
-  </ItemGroup>
-
 </Project>
