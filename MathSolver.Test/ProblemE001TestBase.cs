@@ -1,19 +1,13 @@
 
 namespace MathSolver.Test;
 
-public class ProblemE001Test
+abstract public class ProblemE001TestBase
 {
-    IProblemE001 sut;
+    protected IProblemE001 sut;
 
-    public ProblemE001Test()
-    {
-        //TODO , erstatt denne med egen løsning...
-        sut = new MathSolver.Mysolution.Jaei.E001Multiplesof3and5();
-
-    }
 
     [Fact]
-    [Trait("ProblemA1", "")]
+    [Trait("ProblemE001", "")]
     public void ExampleTest()
     {
         Assert.Equal(23, sut.Sum(below: 10));
@@ -22,7 +16,7 @@ public class ProblemE001Test
    
 
     [Fact]
-    [Trait("ProblemA1", "")]
+    [Trait("ProblemE001", "")]
     public void MyTest()
     {
         var result = sut.Sum(below: 1000);
