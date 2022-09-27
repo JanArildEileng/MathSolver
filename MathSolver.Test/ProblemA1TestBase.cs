@@ -1,27 +1,24 @@
-using MathSolver.Mysolution.Jaei;
 
 namespace MathSolver.Test;
 
-public class ProblemA1Test
+abstract public class ProblemA1TestBase
 {
-    IProblemA1 problemA1;
+    protected IProblemA1 problemA1;
 
-    public ProblemA1Test()
-    {
-        problemA1 = new ProblemA1();
+    //TODO
+    // Lag Sub-klasse med  konstruktor som initierer 'sut' (med din egen implementasjon av IProblemA1)
 
-    }
+
     [Fact]
     [Trait("ProblemA1", "")]
     public void ExampleTest()
     {
-        var result = problemA1.Sum(1, 1);
-        Assert.Equal(result, problemA1.Sum(1, 1));
+        Assert.Equal(2, problemA1.Sum(1, 1));
     }
 
     [Fact]
     [Trait("ProblemA1", "")]
-    public void MyTest()
+    public void SolutionTest()
     {
         var result = problemA1.Sum(2, 2);
 

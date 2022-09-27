@@ -9,6 +9,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Domain\**" />
+    <EmbeddedResource Remove="Domain\**" />
+    <None Remove="Domain\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.1.0" />
     <PackageReference Include="xunit" Version="2.4.1" />
     <PackageReference Include="xunit.runner.visualstudio" Version="2.4.3">
@@ -25,10 +31,6 @@
     <ProjectReference Include="..\MathSolver.Domain\MathSolver.Domain.csproj" />
     <ProjectReference Include="..\MathSolver.Eulerproblems\MathSolver.Eulerproblems.csproj" />
     <ProjectReference Include="..\MathSolver.Mysolution\MathSolver.Mysolution.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Domain\" />
   </ItemGroup>
 
 </Project>
