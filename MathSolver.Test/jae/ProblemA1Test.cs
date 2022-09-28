@@ -1,10 +1,10 @@
 namespace MathSolver.Test.jae;
 
-public class ProblemA1Test : ProblemA1TestBase
+public class ProblemE005Test : ProblemE005TestBase
 {
-    public ProblemA1Test()
+    public ProblemE005Test()
     {
-        sut = new Mysolution.Jaei.ProblemA1();
+        sut = new Mysolution.Jaei.E005Smallestmultiple();
 
     }
 }

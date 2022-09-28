@@ -7,7 +7,7 @@ Console.WriteLine("Hello, BenchmarkRunner !");
 switch(args[0])
 {
 
-    case "ProblemA1": BenchmarkRunner.Run<BenchmarkTestProblemA1>(); break;
+    case "ProblemE005": BenchmarkRunner.Run<BenchmarkTestProblemE005>(); break;
    
 
 }
