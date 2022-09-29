@@ -21,4 +21,9 @@ public  class BenchmarkTestProblemE001
         return new Mysolution.gali.E001Multiplesof3and5().Sum(below: 1000);
     }
 
+    [Benchmark(Description = "tgje")]
+    public int TGJESolution()
+    {
+        return new MathSolver.Mysolution.tgje.E001Multiplesof3and5().Sum(below: 1000);
+    }
 }
