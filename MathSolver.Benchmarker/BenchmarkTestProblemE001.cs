@@ -1,6 +1,7 @@
 ﻿using MathSolver.Mysolution.Jaei;
 using MathSolver.Mysolution.Oist;
 
+
 namespace MathSolver.Benchmarker;
 
 
@@ -33,4 +34,11 @@ public  class BenchmarkTestProblemE001
     {
         return new E001MultiplesOf3And5UsingArithemeticSeriesSum().Sum(below: 1000);
     }
+
+    [Benchmark(Description = "Olkv")]
+    public int OlkvSolution()
+    {
+        return new MathSolver.Mysolution.Olkv.E001Multiplesof3and5().Sum(below: 1000);
+    }
+
 }
