@@ -9,7 +9,7 @@ namespace MathSolver.Mysolution.gali
 {
     public class E001Multiplesof3and5 : IProblemE001
     {
-        //Find the sum of all the multiples of 3 or 5 below 1000.    
+        //Find the sum of all the multiples of 3 or 5 below below.    
 
         // i*3 = j*5 => i=j*5/3, (i,j) => (5,3),(10,6),(15,9),..
         public int Sum(int below)
@@ -19,7 +19,7 @@ namespace MathSolver.Mysolution.gali
             N = (N*3 == below) ? N - 1 : N;
             for (int i = 1; i <= N; i++)
             {
-                sum3 += i * 3;
+                sum3 += i;
             }
 
             var sum5 = 0;
@@ -27,12 +27,11 @@ namespace MathSolver.Mysolution.gali
             M = (M*5 == below) ? M - 1 : M;
             for (int j = 1; j <= M; j++)
             {
-                var x = j * 5;
-                if (x % 3 == 0) continue;
-                sum5 += x;
+                if (j * 5 % 3 == 0) continue;
+                sum5 += j;
             }
 
-            var sum = sum3 + sum5;
+            var sum = 3*sum3 + 5*sum5;
 
             return sum;
         }
