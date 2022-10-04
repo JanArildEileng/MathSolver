@@ -1,5 +1,6 @@
 ﻿using MathSolver.Mysolution.Jaei;
 using MathSolver.Mysolution.Oist;
+using soa = MathSolver.Mysolution.SOA;
 
 namespace MathSolver.Benchmarker;
 
@@ -32,5 +33,11 @@ public  class BenchmarkTestProblemE001
     public int OistSolution()
     {
         return new E001MultiplesOf3And5UsingArithemeticSeriesSum().Sum(below: 1000);
+    }
+
+    [Benchmark(Description = "SOA")]
+    public int SOASolution()
+    {
+        return new soa.E001MultiplesOf3And5UsingArithemeticSeriesSum().Sum(below: 1000);
     }
 }
